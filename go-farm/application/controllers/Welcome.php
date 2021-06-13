@@ -1,25 +1,37 @@
 <?php
 defined('BASEPATH') OR exit('No direct script access allowed');
-
 class Welcome extends CI_Controller {
-
-	/**
-	 * Index Page for this controller.
-	 *
-	 * Maps to the following URL
-	 * 		http://example.com/index.php/welcome
-	 *	- or -
-	 * 		http://example.com/index.php/welcome/index
-	 *	- or -
-	 * Since this controller is set as the default controller in
-	 * config/routes.php, it's displayed at http://example.com/
-	 *
-	 * So any other public methods not prefixed with an underscore will
-	 * map to /index.php/welcome/<method_name>
-	 * @see https://codeigniter.com/user_guide/general/urls.html
-	 */
-	public function index()
-	{
-		$this->load->view('welcome_message');
-	}
+    public function __construct()
+    {
+        parent::__construct();
+        $this->load->library('session');
+        $this->load->database();
+        $this->load->helper(array('url', 'form'));
+    }
+    public function index()
+    {
+        if (isset($_POST['username']))
+        {
+            $username = $this->input->post('username', true);
+            $password = $this->input->post('password', true);
+            if ($username !== '' && $password !== '') {
+                $db = $this->db->get_where('users', array('username' => $username), 1)->row();
+                if ($db !== null && $db !== false && password_verify($password, $db->password)) {
+                    $newdata = array(
+                            'user_id' => $db->id,
+                            'username'  => $username,
+                            'logged_in' => TRUE
+                    );
+                    $this->session->set_userdata($newdata);
+                    redirect('chat', 'refresh');
+                }
+            }
+        }
+        $this->load->view('login');
+    }
+    public function logout()
+    {
+        $this->session->sess_destroy();
+        redirect('welcome');
+    }
 }
