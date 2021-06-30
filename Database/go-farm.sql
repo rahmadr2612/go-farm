@@ -1,14 +1,13 @@
 -- phpMyAdmin SQL Dump
--- version 4.9.2
+-- version 5.0.3
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Jun 29, 2021 at 11:34 AM
--- Server version: 10.4.10-MariaDB
--- PHP Version: 7.3.12
+-- Waktu pembuatan: 30 Jun 2021 pada 04.18
+-- Versi server: 10.4.14-MariaDB
+-- Versi PHP: 7.4.11
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
-SET AUTOCOMMIT = 0;
 START TRANSACTION;
 SET time_zone = "+00:00";
 
@@ -25,7 +24,7 @@ SET time_zone = "+00:00";
 -- --------------------------------------------------------
 
 --
--- Table structure for table `ci_sessions`
+-- Struktur dari tabel `ci_sessions`
 --
 
 CREATE TABLE `ci_sessions` (
@@ -36,7 +35,7 @@ CREATE TABLE `ci_sessions` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 --
--- Dumping data for table `ci_sessions`
+-- Dumping data untuk tabel `ci_sessions`
 --
 
 INSERT INTO `ci_sessions` (`id`, `ip_address`, `timestamp`, `data`) VALUES
@@ -81,21 +80,17 @@ INSERT INTO `ci_sessions` (`id`, `ip_address`, `timestamp`, `data`) VALUES
 ('mv1da9gceuovm1ph408301fvc994lj8l', '::1', 1624951918, 0x5f5f63695f6c6173745f726567656e65726174657c693a313632343935313931383b5f5f4143544956455f53455353494f4e5f444154417c733a3235363a223434643530353762363862623861616162636435343263373330626230306661383733623236373364373731343231373839386631383938396364333263666633366133646461613162346632303130366135633235626562356362363634613566373432613563316138336436313435396537313864366437363636313733654c62546c346432756b417457306d5958384975763832624a4138693046572f7579435051557631417838334c504963793753756b45526e756d314f6f2b57496a6e6b476333436a73675952594b4f6c59455251646b696a537239364c554f62552f596943476530442f44583771683348613049444959307034646d4b4a7736223b),
 ('ev3l6ql28a5dutl3356fhsa0pll0e067', '::1', 1624952438, 0x5f5f63695f6c6173745f726567656e65726174657c693a313632343935323433383b5f5f4143544956455f53455353494f4e5f444154417c733a3235363a223434643530353762363862623861616162636435343263373330626230306661383733623236373364373731343231373839386631383938396364333263666633366133646461613162346632303130366135633235626562356362363634613566373432613563316138336436313435396537313864366437363636313733654c62546c346432756b417457306d5958384975763832624a4138693046572f7579435051557631417838334c504963793753756b45526e756d314f6f2b57496a6e6b476333436a73675952594b4f6c59455251646b696a537239364c554f62552f596943476530442f44583771683348613049444959307034646d4b4a7736223b),
 ('itchjjlimrkn0mb8ga1o2j4keoc2hjfm', '::1', 1624952582, 0x5f5f63695f6c6173745f726567656e65726174657c693a313632343935323433383b5f5f4143544956455f53455353494f4e5f444154417c733a3235363a223434643530353762363862623861616162636435343263373330626230306661383733623236373364373731343231373839386631383938396364333263666633366133646461613162346632303130366135633235626562356362363634613566373432613563316138336436313435396537313864366437363636313733654c62546c346432756b417457306d5958384975763832624a4138693046572f7579435051557631417838334c504963793753756b45526e756d314f6f2b57496a6e6b476333436a73675952594b4f6c59455251646b696a537239364c554f62552f596943476530442f44583771683348613049444959307034646d4b4a7736223b),
-('q1tf75foqglp25bf5mtkkpkrokm54gar', '127.0.0.1', 1624954710, 0x5f5f63695f6c6173745f726567656e65726174657c693a313632343935343731303b),
-('0b1d231lmcb9l3d7mhknhdtg2k3c1lql', '127.0.0.1', 1624955546, 0x5f5f63695f6c6173745f726567656e65726174657c693a313632343935353534363b),
-('btset7en44tqbjf4p5l2u09gjjknpm7s', '127.0.0.1', 1624955857, 0x5f5f63695f6c6173745f726567656e65726174657c693a313632343935353835373b),
-('p0g656tkf5sgp94vpht68k24gb69emhs', '127.0.0.1', 1624956302, 0x5f5f63695f6c6173745f726567656e65726174657c693a313632343935363330323b),
-('803pram9rf0tpli6cl5sli2ifaqsfg9f', '127.0.0.1', 1624956876, 0x5f5f63695f6c6173745f726567656e65726174657c693a313632343935363837363b),
-('mt6h55i8sn9rojjebpfnlotcf453bf3n', '127.0.0.1', 1624957216, 0x5f5f63695f6c6173745f726567656e65726174657c693a313632343935373231363b),
-('f7vq32rb2c6ta25oaipaevh6vk3gvvb5', '127.0.0.1', 1624957599, 0x5f5f63695f6c6173745f726567656e65726174657c693a313632343935373539393b),
-('j0q7pvkdaep0es5adh53tk2s31qpcf93', '127.0.0.1', 1624957958, 0x5f5f63695f6c6173745f726567656e65726174657c693a313632343935373935383b),
-('7h00rn98sdfqc2su2cji4gsihdsb8ac5', '127.0.0.1', 1624958816, 0x5f5f63695f6c6173745f726567656e65726174657c693a313632343935383831363b636172745f636f6e74656e74737c613a343a7b733a31303a22636172745f746f74616c223b643a3337373030303b733a31313a22746f74616c5f6974656d73223b643a31333b733a33323a223435633438636365326532643766626465613161666335316337633661643236223b613a363a7b733a323a226964223b733a313a2239223b733a333a22717479223b643a393b733a353a227072696365223b643a31333030303b733a343a226e616d65223b733a31303a2242656e69682050617265223b733a353a22726f776964223b733a33323a223435633438636365326532643766626465613161666335316337633661643236223b733a383a22737562746f74616c223b643a3131373030303b7d733a33323a223635313262643433643963616136653032633939306230613832363532646361223b613a363a7b733a323a226964223b733a323a223131223b733a333a22717479223b643a343b733a353a227072696365223b643a36353030303b733a343a226e616d65223b733a34323a2247756e74696e6720446168616e205374656b2052616e74696e6720537461696e6c65737320537465656c223b733a353a22726f776964223b733a33323a223635313262643433643963616136653032633939306230613832363532646361223b733a383a22737562746f74616c223b643a3236303030303b7d7d),
-('0qscsbb9ftmipf1c4knfala6l918a50k', '127.0.0.1', 1624958873, 0x5f5f63695f6c6173745f726567656e65726174657c693a313632343935383831363b636172745f636f6e74656e74737c613a343a7b733a31303a22636172745f746f74616c223b643a3337373030303b733a31313a22746f74616c5f6974656d73223b643a31333b733a33323a223435633438636365326532643766626465613161666335316337633661643236223b613a363a7b733a323a226964223b733a313a2239223b733a333a22717479223b643a393b733a353a227072696365223b643a31333030303b733a343a226e616d65223b733a31303a2242656e69682050617265223b733a353a22726f776964223b733a33323a223435633438636365326532643766626465613161666335316337633661643236223b733a383a22737562746f74616c223b643a3131373030303b7d733a33323a223635313262643433643963616136653032633939306230613832363532646361223b613a363a7b733a323a226964223b733a323a223131223b733a333a22717479223b643a343b733a353a227072696365223b643a36353030303b733a343a226e616d65223b733a34323a2247756e74696e6720446168616e205374656b2052616e74696e6720537461696e6c65737320537465656c223b733a353a22726f776964223b733a33323a223635313262643433643963616136653032633939306230613832363532646361223b733a383a22737562746f74616c223b643a3236303030303b7d7d5f74656d705f636f75706f6e7c733a303a22223b5f74656d705f7175616e746974797c613a323a7b733a33323a223435633438636365326532643766626465613161666335316337633661643236223b733a313a2239223b733a33323a223635313262643433643963616136653032633939306230613832363532646361223b733a313a2234223b7d7265646972656374696f6e7c733a36343a226148523063446f764c327876593246736147397a6443396e6279316d59584a744c326c755a4756344c6e426f6343397a614739774c324e6f5a574e7262335630223b);
+('m25lsf3ci1isqlt30pa0s7eb3379ovol', '::1', 1624956449, 0x5f5f63695f6c6173745f726567656e65726174657c693a313632343935363337323b),
+('5r0m6svlqi9bij88vg2c52q0m3ln866j', '::1', 1624972514, 0x5f5f63695f6c6173745f726567656e65726174657c693a313632343937323531343b),
+('9lrjips3ep1qd3j1n69hujtk69344ovl', '::1', 1624972546, 0x5f5f63695f6c6173745f726567656e65726174657c693a313632343937323531343b),
+('iikim27on97fhfln5tsvr7ptbmpv36in', '::1', 1624975695, 0x5f5f63695f6c6173745f726567656e65726174657c693a313632343937353639313b),
+('ne6hgn6p6go7nqn5qj45bll42hdvbbdj', '::1', 1625019489, 0x5f5f63695f6c6173745f726567656e65726174657c693a313632353031393438383b),
+('jgrkjdrdaod6irkme6jrjae3iohan3da', '::1', 1625019495, 0x5f5f63695f6c6173745f726567656e65726174657c693a313632353031393439353b);
 
 -- --------------------------------------------------------
 
 --
--- Table structure for table `contacts`
+-- Struktur dari tabel `contacts`
 --
 
 CREATE TABLE `contacts` (
@@ -111,16 +106,16 @@ CREATE TABLE `contacts` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 --
--- Dumping data for table `contacts`
+-- Dumping data untuk tabel `contacts`
 --
 
 INSERT INTO `contacts` (`id`, `parent_id`, `name`, `subject`, `email`, `message`, `contact_date`, `status`, `reply_at`) VALUES
-(1, NULL, 'Agung Tri Saputra', 'Pengiriman kok lama?', 'martinms.za@gmail.com', 'pengiriman pesanan saya kok lama ya', '2020-03-29 07:40:13', 2, NULL);
+(3, NULL, 'rahmad ramadhan', 'coba', 'rahmadr@gmail.com', 'hai saya mencoba', '2021-06-29 15:49:19', 1, NULL);
 
 -- --------------------------------------------------------
 
 --
--- Table structure for table `coupons`
+-- Struktur dari tabel `coupons`
 --
 
 CREATE TABLE `coupons` (
@@ -134,7 +129,7 @@ CREATE TABLE `coupons` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 --
--- Dumping data for table `coupons`
+-- Dumping data untuk tabel `coupons`
 --
 
 INSERT INTO `coupons` (`id`, `name`, `code`, `credit`, `start_date`, `expired_date`, `is_active`) VALUES
@@ -144,7 +139,7 @@ INSERT INTO `coupons` (`id`, `name`, `code`, `credit`, `start_date`, `expired_da
 -- --------------------------------------------------------
 
 --
--- Table structure for table `customers`
+-- Struktur dari tabel `customers`
 --
 
 CREATE TABLE `customers` (
@@ -157,17 +152,16 @@ CREATE TABLE `customers` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 --
--- Dumping data for table `customers`
+-- Dumping data untuk tabel `customers`
 --
 
 INSERT INTO `customers` (`id`, `user_id`, `name`, `phone_number`, `address`, `profile_picture`) VALUES
-(6, 7, 'Agung Tri Saputra', '081328907767', 'Kost Indah Jaya Belakang No. 19, Jl. Medan Baru VI, Kandang Limun, Bengkulu', 'agung.png'),
-(7, 8, 'Martin Mulyo Syahidin', '08227163734', 'medan', NULL);
+(8, 9, 'rahmad ramadhan', '082282390', 'jalan2', NULL);
 
 -- --------------------------------------------------------
 
 --
--- Table structure for table `orders`
+-- Struktur dari tabel `orders`
 --
 
 CREATE TABLE `orders` (
@@ -186,18 +180,17 @@ CREATE TABLE `orders` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 --
--- Dumping data for table `orders`
+-- Dumping data untuk tabel `orders`
 --
 
 INSERT INTO `orders` (`id`, `user_id`, `coupon_id`, `order_number`, `order_status`, `order_date`, `total_price`, `total_items`, `payment_method`, `delivery_data`, `delivered_date`, `finish_date`) VALUES
-(9, 7, NULL, 'ZCV352137461', '3', '2021-05-03 00:03:44', '62000.00', 3, 2, '{\"customer\":{\"name\":\"Agung Tri Saputra\",\"phone_number\":\"081328907767\",\"address\":\"Kost Indah Jaya Belakang No. 19, Jl. Medan Baru VI, Kandang Limun, Bengkulu\"},\"note\":\"\"}', NULL, NULL),
-(10, 7, NULL, 'WGY452127307', '1', '2021-05-04 10:31:43', '142000.00', 2, 1, '{\"customer\":{\"name\":\"Agung Tri Saputra\",\"phone_number\":\"081328907767\",\"address\":\"Kost Indah Jaya Belakang No. 19, Jl. Medan Baru VI, Kandang Limun, Bengkulu\"},\"note\":\"\"}', NULL, NULL),
-(11, 7, NULL, 'XCB452117342', '2', '2021-05-04 10:35:42', '130000.00', 1, 1, '{\"customer\":{\"name\":\"Agung Tri Saputra\",\"phone_number\":\"081328907767\",\"address\":\"Kost Indah Jaya Belakang No. 19, Jl. Medan Baru VI, Kandang Limun, Bengkulu\"},\"note\":\"\"}', NULL, NULL);
+(12, 9, NULL, 'ELF2962129271', '3', '2021-06-29 15:42:26', '27500.00', 2, 2, '{\"customer\":{\"name\":\"rahmad ramadhan\",\"phone_number\":\"082282390\",\"address\":\"jalan2\"},\"note\":\"\"}', NULL, NULL),
+(13, 9, NULL, 'KOT2962119423', '4', '2021-06-29 15:51:05', '15500.00', 1, 1, '{\"customer\":{\"name\":\"rahmad ramadhan\",\"phone_number\":\"082282390\",\"address\":\"jalan2\"},\"note\":\"\"}', NULL, NULL);
 
 -- --------------------------------------------------------
 
 --
--- Table structure for table `order_items`
+-- Struktur dari tabel `order_items`
 --
 
 CREATE TABLE `order_items` (
@@ -209,21 +202,18 @@ CREATE TABLE `order_items` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 --
--- Dumping data for table `order_items`
+-- Dumping data untuk tabel `order_items`
 --
 
 INSERT INTO `order_items` (`id`, `order_id`, `product_id`, `order_qty`, `order_price`) VALUES
-(13, 9, 9, 1, '35000.00'),
-(14, 9, 10, 1, '12000.00'),
-(15, 9, 11, 1, '15000.00'),
-(16, 10, 1, 2, '65000.00'),
-(17, 10, 10, 1, '12000.00'),
-(18, 11, 1, 2, '65000.00');
+(19, 12, 4, 1, '12500.00'),
+(20, 12, 5, 1, '15000.00'),
+(21, 13, 4, 1, '12500.00');
 
 -- --------------------------------------------------------
 
 --
--- Table structure for table `payments`
+-- Struktur dari tabel `payments`
 --
 
 CREATE TABLE `payments` (
@@ -238,18 +228,16 @@ CREATE TABLE `payments` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 --
--- Dumping data for table `payments`
+-- Dumping data untuk tabel `payments`
 --
 
 INSERT INTO `payments` (`id`, `order_id`, `payment_price`, `payment_date`, `picture_name`, `payment_status`, `confirmed_date`, `payment_data`) VALUES
-(4, 5, '271000.00', '2020-03-29 08:20:39', 'category-1.jpg', '1', NULL, '{\"transfer_to\":\"bri\",\"source\":{\"bank\":\"Bank BRI\",\"name\":\"Agung Tri Saputra\",\"number\":\"12-345-678-9\"}}'),
-(5, 7, '78000.00', '2020-03-30 08:51:08', 'html5.jpg', '2', NULL, '{\"transfer_to\":\"btn\",\"source\":{\"bank\":\"BANK BCA\",\"name\":\"MMS\",\"number\":\"123-456\"}}'),
-(6, 11, '130000.00', '2021-05-04 10:39:11', 'REAKSI_ARTILERI-removebg-preview.png', '1', NULL, '{\"transfer_to\":\"bank-jago-xx\",\"source\":{\"bank\":\"we\",\"name\":\"ddf\",\"number\":\"123\"}}');
+(7, 13, '15.50', '2021-06-29 15:53:12', 'DLLQueue.png', '2', NULL, '{\"transfer_to\":\"bank-jagoss\",\"source\":{\"bank\":\"bri\",\"name\":\"harus\",\"number\":\"0912762\"}}');
 
 -- --------------------------------------------------------
 
 --
--- Table structure for table `products`
+-- Struktur dari tabel `products`
 --
 
 CREATE TABLE `products` (
@@ -268,7 +256,7 @@ CREATE TABLE `products` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 --
--- Dumping data for table `products`
+-- Dumping data untuk tabel `products`
 --
 
 INSERT INTO `products` (`id`, `category_id`, `sku`, `name`, `description`, `picture_name`, `price`, `current_discount`, `stock`, `product_unit`, `is_available`, `add_date`) VALUES
@@ -287,7 +275,7 @@ INSERT INTO `products` (`id`, `category_id`, `sku`, `name`, `description`, `pict
 -- --------------------------------------------------------
 
 --
--- Table structure for table `product_category`
+-- Struktur dari tabel `product_category`
 --
 
 CREATE TABLE `product_category` (
@@ -296,7 +284,7 @@ CREATE TABLE `product_category` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 --
--- Dumping data for table `product_category`
+-- Dumping data untuk tabel `product_category`
 --
 
 INSERT INTO `product_category` (`id`, `name`) VALUES
@@ -306,7 +294,7 @@ INSERT INTO `product_category` (`id`, `name`) VALUES
 -- --------------------------------------------------------
 
 --
--- Table structure for table `reviews`
+-- Struktur dari tabel `reviews`
 --
 
 CREATE TABLE `reviews` (
@@ -320,17 +308,16 @@ CREATE TABLE `reviews` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 --
--- Dumping data for table `reviews`
+-- Dumping data untuk tabel `reviews`
 --
 
 INSERT INTO `reviews` (`id`, `user_id`, `order_id`, `title`, `review_text`, `review_date`, `status`) VALUES
-(2, 7, 6, 'Sangat puas', 'Pengiriman cepat dan sayur segar', '2020-03-30 08:31:31', 1),
-(3, 7, 5, 'Buah segar', 'Buah segar dan kualitasnya sangat bagus', '2020-03-30 08:33:10', 1);
+(4, 9, 12, 'kualitas', 'kualitas barang bagus', '2021-06-29 15:47:31', 1);
 
 -- --------------------------------------------------------
 
 --
--- Table structure for table `settings`
+-- Struktur dari tabel `settings`
 --
 
 CREATE TABLE `settings` (
@@ -340,7 +327,7 @@ CREATE TABLE `settings` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 --
--- Dumping data for table `settings`
+-- Dumping data untuk tabel `settings`
 --
 
 INSERT INTO `settings` (`id`, `key`, `content`) VALUES
@@ -360,7 +347,7 @@ INSERT INTO `settings` (`id`, `key`, `content`) VALUES
 -- --------------------------------------------------------
 
 --
--- Table structure for table `users`
+-- Struktur dari tabel `users`
 --
 
 CREATE TABLE `users` (
@@ -376,46 +363,45 @@ CREATE TABLE `users` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
 --
--- Dumping data for table `users`
+-- Dumping data untuk tabel `users`
 --
 
 INSERT INTO `users` (`id`, `name`, `email`, `email_verified_at`, `username`, `password`, `profile_picture`, `role`, `register_date`) VALUES
-(1, 'Admin Toko Sayur', 'admin@local.test', NULL, 'admin', '$2y$10$Brm3RNWFKvZ1e0ej1vBz9.QbFMW21q0l/iDSt5aDOoGj9zlLFuxh6', 'agung1.png', 'admin', NULL),
-(7, 'Customer Toko Sayur', 'customer@local.test', NULL, 'customer', '$2y$10$6C/A5Yy1gt4yhStWDWN1M.isBaznzDc.MZJdIj7UddW3.qIX5vDvK', NULL, 'customer', '2020-03-29 08:14:30'),
-(8, NULL, 'martinms.za@gmail.com', NULL, 'test', '$2y$10$gj4QxFnTj0dlpwJvT4aJiOM5UW6uCt7MdafC6VrnqsKDi0/JKmsLS', NULL, 'customer', '2021-05-07 10:25:08');
+(1, 'Admin', 'admin@local.test', NULL, 'admin', '$2y$10$Brm3RNWFKvZ1e0ej1vBz9.QbFMW21q0l/iDSt5aDOoGj9zlLFuxh6', 'admin.png', 'admin', NULL),
+(9, NULL, 'rahmadr@gmail.com', NULL, 'rahmad', '$2y$10$TbglEr5mjS5Gvkkjm1hZ0O6x8SPQBYSOSjAn7JnVt7fkr2fSz2T.S', NULL, 'customer', '2021-06-29 15:40:33');
 
 --
 -- Indexes for dumped tables
 --
 
 --
--- Indexes for table `ci_sessions`
+-- Indeks untuk tabel `ci_sessions`
 --
 ALTER TABLE `ci_sessions`
   ADD KEY `ci_sessions_timestamp` (`timestamp`);
 
 --
--- Indexes for table `contacts`
+-- Indeks untuk tabel `contacts`
 --
 ALTER TABLE `contacts`
   ADD PRIMARY KEY (`id`),
   ADD KEY `FK_contacts_contacts` (`parent_id`);
 
 --
--- Indexes for table `coupons`
+-- Indeks untuk tabel `coupons`
 --
 ALTER TABLE `coupons`
   ADD PRIMARY KEY (`id`);
 
 --
--- Indexes for table `customers`
+-- Indeks untuk tabel `customers`
 --
 ALTER TABLE `customers`
   ADD PRIMARY KEY (`id`),
   ADD KEY `FK_customers_users` (`user_id`);
 
 --
--- Indexes for table `orders`
+-- Indeks untuk tabel `orders`
 --
 ALTER TABLE `orders`
   ADD PRIMARY KEY (`id`),
@@ -423,7 +409,7 @@ ALTER TABLE `orders`
   ADD KEY `FK_orders_coupons` (`coupon_id`);
 
 --
--- Indexes for table `order_items`
+-- Indeks untuk tabel `order_items`
 --
 ALTER TABLE `order_items`
   ADD PRIMARY KEY (`id`),
@@ -431,27 +417,27 @@ ALTER TABLE `order_items`
   ADD KEY `product_id` (`product_id`);
 
 --
--- Indexes for table `payments`
+-- Indeks untuk tabel `payments`
 --
 ALTER TABLE `payments`
   ADD PRIMARY KEY (`id`),
   ADD KEY `order_id` (`order_id`);
 
 --
--- Indexes for table `products`
+-- Indeks untuk tabel `products`
 --
 ALTER TABLE `products`
   ADD PRIMARY KEY (`id`),
   ADD KEY `FK_products_product_category` (`category_id`);
 
 --
--- Indexes for table `product_category`
+-- Indeks untuk tabel `product_category`
 --
 ALTER TABLE `product_category`
   ADD PRIMARY KEY (`id`);
 
 --
--- Indexes for table `reviews`
+-- Indeks untuk tabel `reviews`
 --
 ALTER TABLE `reviews`
   ADD PRIMARY KEY (`id`),
@@ -459,113 +445,113 @@ ALTER TABLE `reviews`
   ADD KEY `FK_reviews_orders` (`order_id`);
 
 --
--- Indexes for table `settings`
+-- Indeks untuk tabel `settings`
 --
 ALTER TABLE `settings`
   ADD PRIMARY KEY (`id`) USING BTREE;
 
 --
--- Indexes for table `users`
+-- Indeks untuk tabel `users`
 --
 ALTER TABLE `users`
   ADD PRIMARY KEY (`id`) USING BTREE,
   ADD UNIQUE KEY `users_email_unique` (`email`) USING BTREE;
 
 --
--- AUTO_INCREMENT for dumped tables
+-- AUTO_INCREMENT untuk tabel yang dibuang
 --
 
 --
--- AUTO_INCREMENT for table `contacts`
+-- AUTO_INCREMENT untuk tabel `contacts`
 --
 ALTER TABLE `contacts`
-  MODIFY `id` int(10) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
+  MODIFY `id` int(10) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
 
 --
--- AUTO_INCREMENT for table `coupons`
+-- AUTO_INCREMENT untuk tabel `coupons`
 --
 ALTER TABLE `coupons`
   MODIFY `id` bigint(20) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
 
 --
--- AUTO_INCREMENT for table `customers`
+-- AUTO_INCREMENT untuk tabel `customers`
 --
 ALTER TABLE `customers`
+  MODIFY `id` bigint(20) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=9;
+
+--
+-- AUTO_INCREMENT untuk tabel `orders`
+--
+ALTER TABLE `orders`
+  MODIFY `id` bigint(20) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=14;
+
+--
+-- AUTO_INCREMENT untuk tabel `order_items`
+--
+ALTER TABLE `order_items`
+  MODIFY `id` bigint(20) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=22;
+
+--
+-- AUTO_INCREMENT untuk tabel `payments`
+--
+ALTER TABLE `payments`
   MODIFY `id` bigint(20) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=8;
 
 --
--- AUTO_INCREMENT for table `orders`
---
-ALTER TABLE `orders`
-  MODIFY `id` bigint(20) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=12;
-
---
--- AUTO_INCREMENT for table `order_items`
---
-ALTER TABLE `order_items`
-  MODIFY `id` bigint(20) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=19;
-
---
--- AUTO_INCREMENT for table `payments`
---
-ALTER TABLE `payments`
-  MODIFY `id` bigint(20) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=7;
-
---
--- AUTO_INCREMENT for table `products`
+-- AUTO_INCREMENT untuk tabel `products`
 --
 ALTER TABLE `products`
   MODIFY `id` bigint(20) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=15;
 
 --
--- AUTO_INCREMENT for table `product_category`
+-- AUTO_INCREMENT untuk tabel `product_category`
 --
 ALTER TABLE `product_category`
   MODIFY `id` int(10) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=9;
 
 --
--- AUTO_INCREMENT for table `reviews`
+-- AUTO_INCREMENT untuk tabel `reviews`
 --
 ALTER TABLE `reviews`
-  MODIFY `id` bigint(20) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
+  MODIFY `id` bigint(20) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
 
 --
--- AUTO_INCREMENT for table `settings`
+-- AUTO_INCREMENT untuk tabel `settings`
 --
 ALTER TABLE `settings`
   MODIFY `id` int(10) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=13;
 
 --
--- AUTO_INCREMENT for table `users`
+-- AUTO_INCREMENT untuk tabel `users`
 --
 ALTER TABLE `users`
-  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=9;
+  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=10;
 
 --
--- Constraints for dumped tables
+-- Ketidakleluasaan untuk tabel pelimpahan (Dumped Tables)
 --
 
 --
--- Constraints for table `contacts`
+-- Ketidakleluasaan untuk tabel `contacts`
 --
 ALTER TABLE `contacts`
   ADD CONSTRAINT `FK_contacts_contacts` FOREIGN KEY (`parent_id`) REFERENCES `contacts` (`id`) ON DELETE CASCADE ON UPDATE NO ACTION;
 
 --
--- Constraints for table `customers`
+-- Ketidakleluasaan untuk tabel `customers`
 --
 ALTER TABLE `customers`
   ADD CONSTRAINT `FK_customers_users` FOREIGN KEY (`user_id`) REFERENCES `users` (`id`) ON DELETE NO ACTION ON UPDATE CASCADE;
 
 --
--- Constraints for table `orders`
+-- Ketidakleluasaan untuk tabel `orders`
 --
 ALTER TABLE `orders`
   ADD CONSTRAINT `FK_orders_coupons` FOREIGN KEY (`coupon_id`) REFERENCES `coupons` (`id`) ON DELETE SET NULL ON UPDATE CASCADE,
   ADD CONSTRAINT `FK_orders_users` FOREIGN KEY (`user_id`) REFERENCES `users` (`id`) ON DELETE NO ACTION ON UPDATE CASCADE;
 
 --
--- Constraints for table `order_items`
+-- Ketidakleluasaan untuk tabel `order_items`
 --
 ALTER TABLE `order_items`
   ADD CONSTRAINT `order_items_ibfk_1` FOREIGN KEY (`order_id`) REFERENCES `orders` (`id`) ON DELETE CASCADE ON UPDATE NO ACTION,
